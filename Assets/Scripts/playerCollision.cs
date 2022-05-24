@@ -19,7 +19,8 @@ public class playerCollision : MonoBehaviour {
     {
         if(collision.gameObject.tag == "deathWall" )
         {
-            Destroy(gameObject);
+            transform.position = new Vector3(-2, 3, -2);
+            transform.Rotate(0,0,0);
         }
         
     }
